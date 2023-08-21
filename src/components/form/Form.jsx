@@ -86,7 +86,7 @@ const Form = ({ eligibleAddresses }) => {
         </div>
       </div>
 
-      <div style={{ position: "fixed", bottom: "20px", right: "20px", display: "flex", flexDirection: "column", alignItems: "flex-end", zIndex: "999" }}>
+      <div style={{ position: "fixed", top: "20px", right: "20px", display: "flex", flexDirection: "column", alignItems: "flex-end", zIndex: "999" }}>
         {notifications.map((notification, index) => (
           <div key={index} style={{ padding: "10px 15px", margin: "5px 0", borderRadius: "5px", fontSize: "16px", color: "#fff", fontWeight: "bold", maxWidth: "300px", backgroundColor: notification.type === NOTIFICATION_TYPES.SUCCESS ? "#4caf50" : "#f44336" }}>
             {notification.message}
