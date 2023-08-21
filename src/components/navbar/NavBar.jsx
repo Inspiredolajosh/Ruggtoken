@@ -28,20 +28,20 @@ const NavBar = ({
     }
   };
 
-  const renderConnectedButtons = () => (
-    <div className="connected-buttons">
-      <button className="nav__btn" onClick={switchNetwork}>
-        Switch Network
-      </button>
-      <button className="nav__btn" onClick={disconnectWallet}>
-        Disconnect Wallet
-      </button>
-    </div>
-  );
+  // const renderConnectedButtons = () => (
+  //   <div className="connected-buttons">
+  //     <button className="nav__btn" onClick={switchNetwork}>
+  //       Switch Network
+  //     </button>
+  //     <button className="nav__btn" onClick={disconnectWallet}>
+  //       Disconnect Wallet
+  //     </button>
+  //   </div>
+  // );
 
   return (
     <div className="nav">
-      <div className="container">
+      {/* <div className="container">
         {isConnected ? (
           <div className="connected-section">
             <p className="wallet-address">{truncateWalletAddress(defaultAccount)}</p>
@@ -55,7 +55,7 @@ const NavBar = ({
             Connect Wallet
           </button>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

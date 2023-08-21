@@ -186,11 +186,11 @@ function App() {
         {/* Form */}
         <Form eligibleAddresses={eligibleAddresses} />
 
-        <div className="referal">
+        {/* <div className="referal">
           <div className="container">
             <button className="btn">Claim Airdrop</button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
