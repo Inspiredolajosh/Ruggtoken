@@ -14,10 +14,10 @@ const Form = ({ eligibleAddresses }) => {
     const newNotification = { message, type };
     setNotifications((prevNotifications) => [...prevNotifications, newNotification]);
 
-    // Automatically remove the notification after 5 seconds
+    // Automatically remove the notification after 10 seconds
     setTimeout(() => {
       removeNotification(newNotification);
-    }, 5000);
+    }, 10000);
   };
 
   const removeNotification = (notificationToRemove) => {
