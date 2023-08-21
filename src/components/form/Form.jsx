@@ -5,14 +5,16 @@ const Form = ({ eligibleAddresses }) => {
   const [inputAddress, setInputAddress] = useState("");
 
   const checkEligibility = (e) => {
-    e.preventDefault(); // Prevent the form from submitting and page reloading
+    e.preventDefault();
 
     if (inputAddress.trim() === "") {
       window.alert("Please enter a valid address.");
       return;
     }
 
-    if (eligibleAddresses.includes(inputAddress)) {
+    const normalizedInputAddress = inputAddress.trim().toLowerCase();
+
+    if (eligibleAddresses.some(address => address.trim().toLowerCase() === normalizedInputAddress)) {
       window.alert("Congratulations, Eligible for Airdrop!");
     } else {
       window.alert("Sorry, Not Eligible for Airdrop!");
